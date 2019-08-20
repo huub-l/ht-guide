@@ -219,6 +219,12 @@ input[type='text'], input[type='time'], input[type='url'], input[type='week']{
       padding-bottom: 10px!important;
       background: #0992E9!important;
     }
+    .hkb_widget_toc ol ol li.active > a{
+      background: rgba(19, 48, 97, .1)!important;
+      color: #133061!important;
+    }
+
+
     .widget ul{
       list-style: disc!important;
       padding-left: 15px!important;

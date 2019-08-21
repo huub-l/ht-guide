@@ -106,7 +106,10 @@
 		<div class="site-logo">
 			<a href="<?php echo esc_url( apply_filters( 'ht_knowall_header_logo_url', home_url() ) ); ?>" data-ht-sitetitle="<?php bloginfo( 'name' ); ?>">
 				<?php $theme_logo = get_theme_mod( 'ht_setting__themelogo', get_template_directory_uri() . '/img/logo.png' ); ?>
-				<?php if ( '' != $theme_logo ) : ?><img alt="<?php bloginfo( 'name' ); ?>" src="<?php echo esc_url( $theme_logo ); ?>" /><?php endif; ?></a>
+
+				<!-- <img alt="<?php bloginfo( 'name' ); ?>" src="<?php echo esc_url( $theme_logo ); ?>" /> -->
+				<img alt="<?php bloginfo( 'name' ); ?>" src="<?php bloginfo('template_url'); ?>/img/HT-how.png" />
+				<?php if ( '' != $theme_logo ) : ?><?php endif; ?></a>
 
 				<!-- <?php if ( is_front_page() ) : ?>
 					<h1 class="site-logo__title" itemprop="headline"><?php bloginfo( 'name' ); ?></h1>

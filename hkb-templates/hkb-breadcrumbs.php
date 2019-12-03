@@ -12,23 +12,25 @@
 	<?php $i = 0; ?>
 	<?php foreach ( $breadcrumbs_paths as $index => $paths ) : ?>
 
-		<?php if(is_single()){ ?>
-			<?php
-			$terms = get_the_terms($post->ID, 'ht_kb_category');
-			if($_GET['cat_id']){
-				if($terms[$i]->term_id == $_GET['cat_id']){
-					include "hkb-breadcrumbs-list.php";
-					break;
-				}
-			} else{
-				include "hkb-breadcrumbs-list.php";
-				break;
-			} $i++;
-				 ?>
-		<?php }
-		else{
-			include "hkb-breadcrumbs-list.php";
-		} ?>
+		<?php
+		// if(is_single()){
+		// 	$terms = get_the_terms($post->ID, 'ht_kb_category');
+		// 	if($_GET['cat_id']){
+		// 		if($terms[$i]->term_id == $_GET['cat_id']){
+		// 			include "hkb-breadcrumbs-list.php";
+		// 			break;
+		// 		}
+		// 	} else{
+		// 		include "hkb-breadcrumbs-list.php";
+		// 		break;
+		// 	} $i++;
+		//
+		// 		  }
+		// else{
+		// 	include "hkb-breadcrumbs-list.php";
+		// }
+
+		include "hkb-breadcrumbs-list.php"; ?>
 
 
 

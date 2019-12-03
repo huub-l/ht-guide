@@ -49,7 +49,7 @@
 				<li>
 					<?php //hkb_get_template_part( 'hkb-content-article', 'category' ); ?>
 					<article id="post-<?php the_ID(); ?>" class="hkb-articlemini" itemscope itemtype="https://schema.org/CreativeWork">
-						<a class="hkb-article__link" href="<?php the_permalink(); ?>?cat_id=<?php echo $hkb_current_term_id; ?>">
+						<a class="hkb-article__link" href="<?php the_permalink(); ?>">
 						<h2 class="hkb-article__title" itemprop="headline">
 								<?php the_title(); ?>
 						</h2>
